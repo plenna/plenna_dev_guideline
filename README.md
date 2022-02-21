@@ -1,8 +1,8 @@
 # Pautas y estándares para desarrollo en Plenna
 
-## **Introducción**
-
 Plenna es una Femtech mexicana enfocada en proveer salud integral de la mejor calidad a mujeres. A través de nuestro website, 'Portal Plenna', proveemos información y acceso a salud sexual y los distintos servicios relacionados que proveemos en nuestras clínicas presenciales, las pacientes pueden agendar consultas con nuestras doctoras y tienen acceso al historial médico electrónico de todas las consultas que han tenido con nosotras. Todo esto es posible debido a las plataformas de terceros que integramos a través de sus APIs.
+
+## **Introducción**
 
 Este repositorio contiene las pautas y estándares que utiiza el equipo técnico de Plenna durante el desarrollo de las distintas capas y aplicaciones que conforman el ecosistema digital de Plenna. Sin importar a qué aplicación o componente de la arquitectura se refiera, estos estándares nos ayudan a cumplir los siguientes objetivos:
 
