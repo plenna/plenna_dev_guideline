@@ -28,7 +28,7 @@ Para los estándares generales:
 - [Simplicidad y legibilidad sobre practicidad](#simplicidad-y-legibilidad-sobre-practicidad)
 - [Reusabilidad](#reusabilidad)
 - [Comentarios](#comentarios)
-- [Deuda técnica](#deuda)
+- [Deuda técnica](#deuda-técnica)
 
 # Pautas y estándares generales
 
@@ -51,7 +51,7 @@ Este principio va de la mano del concepto de DRY (Don't repeat yourself). Si ide
 
 Una de las mejores herramientas de documentación son los comentarios dentro de nuestro código, pero tampoco es buena idea comentar todo nuestro código de manera que se vuelva pesado o complicado de leer. Los comentarios deben utilizarse solamente para enfatizar cosas que no son obvias en el código, enfocándose en el **_por qué_** en vez del **_cómo_**. El **_cómo_** puede llegar a ser obvio por el código mismo, sin embargo, **_por qué_** hicimos las cosas de una manera tiene que ver con nuestra toma de decisiones o las limitaciones que se tenían en un momento específico.
 
-## **Deuda técnica** {#deuda}
+## **Deuda técnica**
 
 En un mundo en el que las tecnologías se mueven tan rápido y cada día tenemos un nuevo framework, una nueva versión de una dependencia o incluso un nuevo requerimiento que nos agrega limitaciones de tiempo, es imposible no tener una dedua técnica eventualmente. La deuda técnica surge de decisiones que tomamos bajo ciertas condiciones para cumplir con deadlines o al descubrir escenarios o problemas que no se tenían contemplados en el diseño de la solución y se traduce en funcionalidades o manejo de errores que queda pendiente de manera temporal para beneficiar la entrega de un feature más grande.
 
