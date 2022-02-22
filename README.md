@@ -1,3 +1,5 @@
+![Logo de Plenna](/assets/logo.png)
+
 # Pautas y estándares para desarrollo en Plenna
 
 Plenna es una Femtech mexicana enfocada en proveer salud integral de la mejor calidad a mujeres. A través de nuestro website, 'Portal Plenna', proveemos información y acceso a salud sexual y los distintos servicios relacionados que proveemos en nuestras clínicas presenciales, las pacientes pueden agendar consultas con nuestras doctoras y tienen acceso al historial médico electrónico de todas las consultas que han tenido con nosotras. Todo esto es posible debido a las plataformas de terceros que integramos a través de sus APIs.
@@ -29,6 +31,7 @@ Para los estándares generales:
 - [Reusabilidad](#reusabilidad)
 - [Comentarios](#comentarios)
 - [Deuda técnica](#deuda-técnica)
+- [Buenas prácticas con Javascript](#buenas-prácticas-con-javascript)
 
 # Pautas y estándares generales
 
@@ -57,8 +60,40 @@ En un mundo en el que las tecnologías se mueven tan rápido y cada día tenemos
 
 Esta deuda técnica puede llevar a problemas de mantenimiento y nuevos features por lo que es importante tenerlo identificado en todo momento. Agrega comentarios o tags (cuando estemos utilizando paquterías de terceros para documentar) para dejar un mensaje claro de lo que es necesario agregar o arreglar posteriormente, por ejemplo, utilizando comentarios con `//TODO: Tarea por hacer` o `@todo Tarea por hacer` si utilizamos JSDoc.
 
-## **Diseño de solución**
+## **Buenas prácticas con Javascript**
 
-Antes de empezar a desarrollar, es necesario tener una idea clara de a dónde queremos llegar. Es por esto que la primer tarea de un nuevo feature o un proyecto nuevo es el Diseño de solución del mismo, es decir, un plan de cómo alcanzaremos el objetivo planteado.
+- Uso de llaves. Siempre que declaremos un bloque de código como `if, for, while` hay que usar llaves para declarar su contenido, sin importar que exista una manera más corta de escribirlo.
 
-Este proceso es altamente
+```
+//Mal
+if(true) return;
+
+//Bien
+if(true) {
+  return;
+}
+```
+
+- Comparación. Siempre que comparemos dos datos es mejor utilizar el operador `===` que el operador `==` ya que nos ahorramos problemas de tipo de datos al ser más estrictos.
+
+```
+//Mal
+if(this == that) {
+  return;
+}
+
+//Bien
+if(this === that) {
+  return;
+}
+```
+
+- Definición de Strings. Siempre usamos template literals para definir Strings en los proyectos, nos dan mucha más flexibilidad al sustituir expresiones enteras dentro del String. Para mayor información, se puede referir a la [documentación de MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
+
+- Nomenclatura de variables. Usamos la notación de camelCase donde la primer letra de la primer palabra es minúscula, posteriormente no se usan espacios entre palabras y la primer letra de cada palabra es mayúscula. Se puede referir a la [documentación de Wikipedia](https://en.wikipedia.org/wiki/Camel_case)
+
+- No utilizar loops manuales. En general preferimos utilizar los métodos de `array.prototype` para recorrer y modificar los arreglos, en vez de escribir nuestros propios bloques `for()` o incluso `for ... in`. Esto queda a juicio del desarrollador ya que no en todos los casos será posible. Se puede referir a la documentación de [MDN Web Docs de Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) para ver todos los métodos disponibles.
+
+- Definición de variables. Siempre debe darse preferencia al uso de `const` sobre `let`. En general, nos permite disminuir la probabilidad de bugs ya que las constantes no pueden modificar su valor. Además, dependiendo del caso, debe evitarse el uso de `var`.
+
+- Modo estrícto. En todos los archivos de Javascript activaremos el modo estrícto a nivel de archivo, es decir al inicio del mismo. Esto se hace agregando el comando `use strict;` en la primer línea del mismo. Se puede referir a la [documentación de MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
