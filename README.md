@@ -19,11 +19,12 @@ Esta guía es un documento vivo y en constante cambio en el que todas las integr
 
 ## **Contenido**
 
-Esta documentación puede dividirse en tres secciones principales:
+Esta documentación puede dividirse en cuatro secciones principales:
 
 1. Estándares generales. Aquellos que no son específicos de alguna aplicación o técnología (Front End, Back End, Base de Datos, etc.) sino que deben ser tomados en cuenta para todos los desarrollos y modificaciones a trabajar. Estos pueden encontrarse en este mismo archivo.
-2. Estándares de Front End. Pueden encontrarse en la carpeta de 'Front end'.
-3. Estándares de Back End. Pueden encontrarse en la carpeta de 'Back end'.
+2. Metodología de trabajo. Pueden encontrarse en la carpeta de 'Metodología'.
+3. Estándares de Front End. Pueden encontrarse en la carpeta de 'Front end'.
+4. Estándares de Back End. Pueden encontrarse en la carpeta de 'Back end'.
 
 Para los estándares generales:
 
