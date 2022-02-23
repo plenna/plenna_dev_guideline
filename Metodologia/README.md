@@ -53,10 +53,10 @@ Una vez que el código cumpla con todos los requerimientos del revisor, será in
 
 ### **Testing and QA**
 
-Este proceso es realizado principalmente por los stakeholders y consiste en comprobar que el producto entregado por el equipo técnico cumple con las expectativas platneadas y ofrece el valor solicitado al paciente o usuario final.
+Este proceso es realizado principalmente por los stakeholders y consiste en comprobar que el producto entregado por el equipo técnico cumple con las expectativas planteadas y ofrece el valor solicitado al paciente o usuario final.
 
 La aportación del equipo técnico dentro de este proceso es la de resolver los bugs encontrados y asistir en las dudas que puedan surgir a lo largo de las pruebas.
 
 ### **Despliegue a producción**
 
-Una vez que tanto el equipo técnico como los stakeholders dan el visto bueno al producto desarrollado, es momento de pasar la rama pertinente a producción a través de un despliegue en la herramienta de Amazon Web Services Amplify. Una vez que la versión está desplegada, es necesario también pasar el código fuente productivo a la rama _master_ para que siemrpe esté sincronizado.
+Una vez que tanto el equipo técnico como los stakeholders dan el visto bueno al producto desarrollado, es momento de pasar la rama pertinente a producción a través de un despliegue en la herramienta de Amazon Web Services Amplify. Una vez que la versión está desplegada, es necesario también pasar el código fuente productivo a la rama _master_ para que siempre esté sincronizado.
