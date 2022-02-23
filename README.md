@@ -2,7 +2,7 @@
 
 # Pautas y estándares para desarrollo en Plenna
 
-Plenna es una Femtech mexicana enfocada en proveer salud integral de la mejor calidad a mujeres. A través de nuestro website, 'Portal Plenna', proveemos información y acceso a salud sexual y los distintos servicios relacionados que proveemos en nuestras clínicas presenciales, las pacientes pueden agendar consultas con nuestras doctoras y tienen acceso al historial médico electrónico de todas las consultas que han tenido con nosotras. Todo esto es posible debido a las plataformas de terceros que integramos a través de sus APIs.
+Plenna es una Femtech mexicana enfocada en proveer salud integral de la mejor calidad a mujeres. A través de nuestro website, 'Portal Plenna', proveemos información y acceso a salud sexual y a los distintos servicios relacionados que ofrecemos en nuestras clínicas presenciales, las pacientes pueden agendar consultas con nuestras doctoras y tienen acceso al historial médico electrónico de todas las consultas que han tenido con nosotras. Todo esto es posible debido a las plataformas de terceros que integramos a través de sus APIs.
 
 ## **Introducción**
 
@@ -40,13 +40,13 @@ El stack tecnológico de Plenna se basa fuertemente en Javascript al utilizar Ex
 
 ### **Simplicidad y legibilidad sobre practicidad**
 
-Siempre debe favoreserce la legibilidad del código sobre el performance o la practicidad del mismo. El código difícil de leer, con nombres de variables muy rebuscados o extremadamente cortos que no dan información necesaria, hace que sea más difícil mantenerlo o resolver bugs en él.
+Siempre debe favorecerse la legibilidad del código sobre el performance o la practicidad del mismo. El código difícil de leer, con nombres de variables muy rebuscados o extremadamente cortos que no dan información necesaria, hace que sea más difícil mantenerlo o resolver bugs en él.
 
 Siempre deben utilizarse nombres de variables claros que den información sobre su objetivo y el tipo de información que están almacenando. Aquellas variables temporales, como iteradores o auxiliares, pueden utilizar nombres cortos (`i, j, k, aux`, por ejemplo).
 
 ### **Reusabilidad**
 
-Este principio va de la mano del concepto de DRY (Don't repeat yourself). Si identificamos una sección de nuestro código que se repite en distintas partes del proyecto, entonces podemos separarla en un módulo independiente que se reutilice a través del proyecto. Es a través de la modularidad y la parametrización que evitamos repetir las misma líneas de código en el proyecto y que conseguimos componentes reutilizables. Esto nos permite movernos a una mayor velocidad ya que siempre estamso reutilizando las funcionalidades previamente implementadas.
+Este principio va de la mano del concepto _DRY_ (Don't repeat yourself). Si identificamos una sección de nuestro código que se repite en distintas partes del proyecto, entonces podemos separarla en un módulo independiente que se reutilice a través del proyecto. Es a través de la modularidad y la parametrización que evitamos repetir las mismas líneas de código en el proyecto y que conseguimos componentes reutilizables. Esto nos permite movernos a una mayor velocidad ya que siempre estamos reutilizando las funcionalidades previamente implementadas.
 
 - Modularidad. Desde el diseño de solución, es posible identificar funciones o componentes que son útiles en distintos lugares del proyecto y deben ser módulos independientes. Esto hace el código más fácil de leer y mantener, ya que si se necesita un cambio en esa funcionalidad esta debe realizarse en un sólo lugar.
 - Parametrización. Al crear estos componentes reutilizables siempre piensa en todos los posibles escenarios en los que pueden utilizarse, con todos los posibles parámetros o condiciones que pueden recibir y manejando la mayor cantidad posible de errores. De esta manera el componente no dependerá de una situación o variables específicas.
