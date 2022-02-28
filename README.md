@@ -97,4 +97,6 @@ if(this === that) {
 
 - Definición de variables. Siempre debe darse preferencia al uso de `const` sobre `let`. En general, nos permite disminuir la probabilidad de bugs ya que las constantes no pueden modificar su valor. Además, dependiendo del caso, debe evitarse el uso de `var`.
 
+- Definición de funciones. Damos preferencia a la definición de funciones como arrow functions, aprovechando las funcionalidades más recientes de Javascript. Obviamente, existen escenarios en donde esta no es la mejor práctica, por lo que también se alienta el uso de otras definiciones siempre y cuando estén fundamentadas.
+
 - Modo estrícto. En todos los archivos de Javascript activaremos el modo estrícto a nivel de archivo, es decir al inicio del mismo. Esto se hace agregando el comando `use strict;` en la primer línea del mismo. Se puede referir a la [documentación de MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)

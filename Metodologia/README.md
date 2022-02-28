@@ -49,7 +49,7 @@ Una vez que se ha asegurado la calidad del código a entregar debe pasar a una r
 
 Si fuera necesario, el revisor puede regresar el Pull Request con los bugs o cambios solicitados para que el desarrollador los resuelva. Este proceso puede acelerarse a través del _peer progamming_ si estos dos desarrolladores lo creen necesario.
 
-Una vez que el código cumpla con todos los requerimientos del revisor, será integrado dentro de la rama base del feature para ser probado por los stakeholders principales previo a su paso a producción.
+Una vez que el código cumpla con todos los requerimientos del revisor, será integrado dentro de la rama base del feature para ser probado por los stakeholders principales previo a su paso a producción. Esta integración debe realizarse utilizando merge, evitando squash o rebase, para mantener la misma historia dentro de las distintas ramas, minimizando la probabilidad de errores.
 
 ### **Testing and QA**
 
